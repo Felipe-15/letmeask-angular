@@ -1,1 +1,29 @@
-<p>create-room works!</p>
+<div class="flex flex-col gap-6 items-center justify-center w-[300px]">
+  <img
+    src="../../../assets/logo.svg"
+    class="max-w-[140px] mb-4"
+    alt="Let me ask logo"
+  />
+  <form class="w-full flex flex-col gap-4">
+    <h3 class="font-poppins font-bold mb-1 text-center text-xl">
+      Crie uma nova sala
+    </h3>
+    <input
+      placeholder="Nome da sala"
+      class="w-full p-4 border-gray-600 transition focus:border-brand-500 rounded-md placeholder:text-gray-500 border h-[50px] outline-transparent"
+    />
+    <button
+      class="w-full font-roboto font-medium bg-brand-500 transition hover:bg-brand-400 rounded-md flex items-center justify-center h-[50px] gap-2 text-white"
+    >
+      Criar sala
+    </button>
+    <span class="text-xs text-gray-500 self-center"
+      >Quer entrar em uma sala já existente?
+      <a
+        routerLink="/home/select-room"
+        class="text-brand-500 transition hover:text-brand-400 underline"
+        >Clique aqui</a
+      ></span
+    >
+  </form>
+</div>
