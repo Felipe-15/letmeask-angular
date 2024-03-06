@@ -1,0 +1,20 @@
+<main class="grid sm:grid-cols-2 w-full min-h-screen">
+  <section class="hidden sm:flex items-center bg-brand-500">
+    <div class="flex flex-col gap-3 max-w-[400px] ml-[80px]">
+      <img
+        src="../assets/home-illustration.svg"
+        class="max-w-[280px]"
+        alt="Illustration about asking questions"
+      />
+      <h2 class="font-poppins font-bold text-white text-3xl">
+        Toda pergunta tem uma resposta.
+      </h2>
+      <p class="font-roboto text-gray-500">
+        Aprenda e compartilhe conhecimento com outras pessoas.
+      </p>
+    </div>
+  </section>
+  <section class="flex flex-col justify-center items-center">
+    <router-outlet />
+  </section>
+</main>
