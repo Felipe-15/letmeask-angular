@@ -1,6 +1,64 @@
-<img
-  src="../../../assets/logo.svg"
-  class="max-w-[120px]"
-  alt="Let me ask logo"
-/>
-<button></button>
+<div class="flex flex-col gap-6 items-center justify-center w-[300px]">
+  <img
+    src="../../../assets/logo.svg"
+    class="max-w-[140px] mb-4"
+    alt="Let me ask logo"
+  />
+  <a
+    routerLink="/home/create-room"
+    class="w-full cursor-pointer font-roboto font-medium bg-contrast transition-all hover:brightness-125 rounded-md flex items-center justify-center h-[50px] gap-2 text-white"
+  >
+    <svg
+      class="w-[20px]"
+      xmlns="http://www.w3.org/2000/svg"
+      x="0px"
+      y="0px"
+      width="100"
+      height="100"
+      viewBox="0,0,256,256"
+    >
+      <g
+        fill="#ffffff"
+        fill-rule="nonzero"
+        stroke="none"
+        stroke-width="1"
+        stroke-linecap="butt"
+        stroke-linejoin="miter"
+        stroke-miterlimit="10"
+        stroke-dasharray=""
+        stroke-dashoffset="0"
+        font-family="none"
+        font-weight="none"
+        font-size="none"
+        text-anchor="none"
+        style="mix-blend-mode: normal"
+      >
+        <g transform="scale(5.12,5.12)">
+          <path
+            d="M25.99609,48c-12.68359,0 -23.00391,-10.31641 -23.00391,-23c0,-12.68359 10.32031,-23 23.00391,-23c5.74609,0 11.24609,2.12891 15.49219,5.99609l0.77344,0.70703l-7.58594,7.58594l-0.70312,-0.60156c-2.22656,-1.90625 -5.05859,-2.95703 -7.97656,-2.95703c-6.76562,0 -12.27344,5.50391 -12.27344,12.26953c0,6.76563 5.50781,12.26953 12.27344,12.26953c4.87891,0 8.73438,-2.49219 10.55078,-6.73828h-11.55078v-10.35547l22.55078,0.03125l0.16797,0.79297c1.17578,5.58203 0.23438,13.79297 -4.53125,19.66797c-3.94531,4.86328 -9.72656,7.33203 -17.1875,7.33203z"
+          ></path>
+        </g>
+      </g>
+    </svg>
+    Criar sala com Google
+  </a>
+  <div
+    class="w-full flex items-center justify-center gap-3 before:bg-gray-500 before:w-full before:h-[1px] after:bg-gray-500 after:w-full after:h-[1px]"
+  >
+    <span class="text-gray-500 text-nowrap font-roboto text-sm"
+      >ou entre em uma sala</span
+    >
+  </div>
+  <form class="w-full flex flex-col gap-4">
+    <input
+      placeholder="Digite o código da sala"
+      class="w-full p-4 border-gray-600 transition focus:border-brand-500 rounded-md placeholder:text-gray-500 border h-[50px] outline-transparent"
+    />
+    <button
+      class="w-full font-roboto font-medium bg-brand-500 transition hover:bg-brand-400 rounded-md flex items-center justify-center h-[50px] gap-2 text-white"
+    >
+      <i-feather name="log-in"></i-feather>
+      Entrar na sala
+    </button>
+  </form>
+</div>
