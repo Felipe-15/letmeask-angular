@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { EnterRoomComponent } from './components/enter-room/enter-room.component';
 import { CreateRoomComponent } from './components/create-room/create-room.component';
 import { LayoutComponent } from './templates/home/layout/layout.component';
+import { hasAuthGuard } from './guards/has-auth.guard';
 
 export const routes: Routes = [
   {
@@ -20,6 +21,7 @@ export const routes: Routes = [
       {
         path: 'create-room',
         component: CreateRoomComponent,
+        canActivate: [hasAuthGuard],
       },
     ],
   },
